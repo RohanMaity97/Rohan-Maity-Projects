@@ -116,8 +116,8 @@ I'm particularly interested in roles where I can combine analytical thinking, te
 ## Connect With Me
 
 - **GitHub:** [RohanMaity97](https://github.com/RohanMaity97)
-- **LinkedIn:** [https://www.linkedin.com/in/rohan-maity/]
-- **Email:** [rohanmaitywork@gmail.com]
+- **LinkedIn:** [Rohan Maity](https://www.linkedin.com/in/rohan-maity/)
+- **Email:** [My Email](rohanmaitywork@gmail.com)
 
 ---
 
