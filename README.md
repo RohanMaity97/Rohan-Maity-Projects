@@ -61,7 +61,7 @@ This repository contains projects covering different areas of data analytics, bu
 Projects involving Python-based data analysis, data cleaning, exploratory data analysis, statistical analysis, and visualisation.
 
 **Featured Project:**
-- [**Indian Footwear E-Commerce Sales Analysis (2018–2025)**](https://github.com/RohanMaity97/Rohan-Maity-Projects/tree/main/Python%20Projects/Indian%20Footwear%20Sales%20Data%20Analysis)
+- [**Indian Footwear E-Commerce Sales Analysis (2018–2025)**](./Python%20Projects/Indian%20Footwear%20Sales%20Data%20Analysis)
   - Data cleaning and preprocessing using Pandas.
   - Exploratory data analysis and business performance analysis.
   - Sales, revenue, and profitability analysis.
@@ -69,7 +69,7 @@ Projects involving Python-based data analysis, data cleaning, exploratory data a
   - Correlation analysis and simple linear regression.
   - Interactive data visualisations using Plotly.
 
-[Explore Python Projects](./Python%20Projects/)
+[Explore my other Python Projects](./Python%20Projects/)
 
 ### Power BI Projects
 
