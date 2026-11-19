@@ -1,10 +1,14 @@
 # India Sports Footwear E-Commerce Sales Analysis
 
 ## Table of Contents
-- [Project Overview](#Project_Overview)
-- [Dataset Overview](#Dataset_Overview)
-- [Tools and Technologies](#Tools_and_Technologies)
-- [Project Objectives](#Project_Objectives)
+
+- [Project Overview](#project-overview)
+- [Dataset Overview](#dataset-overview)
+- [Tools and Technologies](#tools-and-technologies)
+- [Project Objectives](#project-objectives)
+- [Key Business Findings](#key-business-findings)
+- [Business Recommendations](#business-recommendations)
+- [Project Limitations](#project-limitations)
 
 ## Project Overview
 
@@ -37,19 +41,19 @@ The project uses the following tools and libraries:
 The analysis focuses on the following business questions:
 
 1. Which footwear brands and categories generate the most revenue and profit?
-2. Which customer demographics in terms of age group and gender generate the most revenue as well as the highest profits?
-3. Which sales channel and type of customers generate the highest share of revenue?
+2. Which customer demographics, based on age group and gender, contribute most to revenue and profit?
+3. Which sales channels and customer types generate the highest revenue?
 4. Which states record the highest sales volumes?
-5. What can be understood from the customer ratings given?
-6. What can be understood from the delivery days of the products?
-7. What is the relationship between the profit and discount of individual products across sales channels?
-8. What is the relationship between the profit and discount of individual products across sales channels?
-9. How do sales and revenue vary across years and combined quarters?
-10. Do delivery times and customer ratings show any observable relationship?
-11. What relationships can be seen from the correlation analysis of all the variables in the data?
-12. How do discounts relate to gross profit and profit margins?
-13. What does customer segmentation reveal about customer retention and engagement?
-14. Is there a relationship between customer lifespan and historical customer revenue?
+5. What insights can be derived from customer ratings?
+6. What patterns can be observed in product delivery timelines?
+7. How are discounts related to product profitability across sales channels?
+8. How are revenue related to product profitability across sales channels?
+9. How do sales and revenue vary across individual years and pooled quarters?
+10. Is there an observable relationship between delivery performance and customer ratings?
+11. What relationships exist between numerical variables in the dataset?
+12. How do different discount levels relate to aggregate gross profit and profit margins?
+13. What does RFM customer segmentation reveal about customer behaviour and retention?
+14. Is customer lifespan associated with historical customer revenue?
 
 ## Key Business Findings
 
@@ -62,10 +66,10 @@ From the analysis, these are the observations made corresponding to the above qu
 5. As per the customer ratings given, the most common rating is a perfect rating of **5** out of 5, while most of the collective ratings range from **3.6** to **4.5** out of 5.
 6. As per the delivery timelines given, the most common type of delivery is **Standard delivery**, while **3 days** is the most common delivery timeline for the products.
 7. It can be observed that there is a negative linear correlation between the profit and discount of individual products across sales channels, where an increase in discount reduces the profitability.
-8. On the contrary, it can be observed that there is a positive linear correlation between the profit and discount of individual products across sales channels, where an increase in revenue increases the profitability.
-9. It can be seen that there is an erratic pattern of sales and revenue generation across the years, where there is an increase at first and then a gradual drop. **2024** is the peak year where the sales hit the highest with **467 Units** and generated a revenue of **INR 2.54 million**. However, looking closely, it can be seen that **14th August 2025** generated the highest revenue of **INR 74,860**. However, when it comes to combined quarters, there is a linear trend of increasing sales and revenue generation with each progressing quarter, with **Q4** generating a combined sales of **1187 Units** with a revenue of **INR 6.48 million** across all years.
-10. It can be observed that while the average customer rating sits at **4.1** out of 5 even in both Delayed and On Time deliveries, the age group of 55+ shows an increased customer rating of average **4.1** out of 5 during On Time deliveries compared to a customer rating of average **3.9** out of 5 during Delayed deliveries. This shows that older customer groups are more satisfied with on-time deliveries compared to other groups who seem indifferent.
-11. As per both Pearson and Spearman correlation analysis, it can be seen that there is a **very strong correlation** between gross profit and net revenue, as well as between total COGS and net revenue. This shows that with an increase in COGS, there is an increase in revenue generation, which in turn leads to an increase in gross profit.
+8. On the contrary, it can be observed that there is a positive linear correlation between the profit and revenue of individual products across sales channels, where an increase in revenue increases the profitability.
+9. It can be seen that there is an erratic pattern of sales and revenue generation across the years, where there is an increase at first and then a gradual drop. **2024** is the peak year where the sales hit the highest with **467 Units** and generated a revenue of **INR 2.54 million**. However, looking closely, it can be seen that **14th August 2025** generated the highest revenue of **INR 74,860**. However, when it comes to combined quarters, there is a linear trend of increasing sales and revenue generation with each progressing quarter, with **Q4** generating combined sales of ** 1,187 units ** with a revenue of **INR 6.48 million** across all years.
+10. It can be observed that while the average customer rating sits at **4.1** out of 5 even in both Delayed and On Time deliveries, the age group of 55+ shows an increased customer rating of average **4.1** out of 5 during On Time deliveries compared to a customer rating of average **3.9** out of 5 during Delayed deliveries. This suggests that customers aged 55+ may be more sensitive to delivery performance than other age groups, although further analysis would be required to establish whether this difference is meaningful.
+11. Pearson and Spearman correlation analyses showed strong positive relationships between gross profit and net revenue, as well as between total COGS and net revenue. These relationships are consistent with the underlying financial structure of the data and should not be interpreted as evidence of causation.
 12. From the discount and profitability analysis, it can be seen that the **15% discount group** recorded the highest aggregate gross profit of **INR 1.85 million** and a profit margin of **47%**, even though there is a decrease in profit margin with an increase in discount percentages. This suggests that discount strategies should be evaluated against both sales volume and profitability rather than revenue alone. These are observed associations and do not establish that a particular discount level directly causes higher or lower profit.
 13. From the analysis of the customer segmentation, it can be seen that **Loyal Customers** make up the largest identified segment, while **Champions** are the smallest identified segment. However, **At Risk** and **Lost Customers** together form a major part of the customer base. The results suggest potential opportunities for customer retention, re-engagement, and loyalty initiatives.
 14. The OLS regression model examined the relationship between customer lifespan and historical customer revenue.
@@ -97,3 +101,22 @@ These recommendations are based on the available dataset and should be validated
 - The quarterly comparison groups all years together and does not independently establish recurring year-by-year seasonality.
 - Customer lifespan represents the observed period between a customer's first and last recorded purchases. It does not necessarily represent the actual duration of the customer relationship.
 - RFM recency is calculated relative to the latest transaction date in the dataset.
+- The regression model examines an association between customer lifespan and historical customer revenue. It is not designed to predict future customer lifetime value.
+- The analysis is based on the available dataset and does not independently verify whether the observed transactions represent the entire Indian sports footwear market.
+
+## How to Run the Project
+
+1. Clone or download this repository.
+2. Install the required dependencies:
+
+   pip install pandas numpy plotly matplotlib statsmodels jupyter
+
+3. Open Jupyter Notebook:
+
+   jupyter notebook
+
+4. Open the project notebook.
+5. Ensure the dataset is available at the specified file path.
+6. Run the notebook cells to reproduce the analysis.
+
+Note: The dataset is available from the original Kaggle source.
