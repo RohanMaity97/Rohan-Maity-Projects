@@ -152,10 +152,11 @@ These recommendations are based on the available dataset and should be validated
 
 3. Open Jupyter Notebook:
 
+   ```bash
    jupyter notebook
 
-4. Open the project notebook.
-5. Ensure the dataset is available at the specified file path.
-6. Run the notebook cells to reproduce the analysis.
+5. Open the project notebook.
+6. Ensure the dataset is available at the specified file path.
+7. Run the notebook cells to reproduce the analysis.
 
 Note: The dataset is available from the original Kaggle source.
